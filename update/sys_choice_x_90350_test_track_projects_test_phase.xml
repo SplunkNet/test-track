@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="test_phase" table="x_90350_test_track_projects" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_phase</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Joint System Integration Testing</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:46:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>815e0bdfdb66330007bb6a49489619df</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:47:39</sys_updated_on>
+            <value>JSIT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_phase</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unit Testing</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>101</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:47:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3d9e4313dba6330007bb6a4948961997</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:47:44</sys_updated_on>
+            <value>UT</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>test_phase</element>
+            <name>x_90350_test_track_projects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:46:59</sys_created_on>
+            <sys_id>2b8e0bdfdb66330007bb6a49489619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>test_phase</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_choice_x_90350_test_track_projects_test_phase</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:46:59</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

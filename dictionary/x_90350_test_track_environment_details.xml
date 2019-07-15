@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Environment Details" max_length="40" name="x_90350_test_track_environment_details" type="collection">
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Project" max_length="32" name="project" reference="x_90350_test_track_projects" type="reference"/>
+        <element label="Username (CUS)" max_length="40" name="username_cus" type="string"/>
+        <element label="Username (DXC)" max_length="40" name="username_dxc" type="string"/>
+        <index name="index">
+            <element name="project"/>
+        </index>
+    </element>
+</database>

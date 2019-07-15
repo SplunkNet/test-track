@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="itsm_module" table="x_90350_test_track_projects" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Change Management</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:38:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a3c4f9fdb66330007bb6a4948961999</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:41:47</sys_updated_on>
+            <value>CM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Change Task</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>101</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:40:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2bbc0f9fdb66330007bb6a494896193d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:41:52</sys_updated_on>
+            <value>CT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incident Management</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>102</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:39:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1dac4f9fdb66330007bb6a4948961958</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:41:55</sys_updated_on>
+            <value>IM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problem Management</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>103</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:40:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>240d07dfdb66330007bb6a49489619c3</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:42:00</sys_updated_on>
+            <value>PM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Problem Task</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>104</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:41:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>302d0f9fdb66330007bb6a49489619b6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:42:05</sys_updated_on>
+            <value>PT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>itsm_module</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Request</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>105</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:41:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>563d479fdb66330007bb6a4948961954</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:42:09</sys_updated_on>
+            <value>SR</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>itsm_module</element>
+            <name>x_90350_test_track_projects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-07-15 14:38:36</sys_created_on>
+            <sys_id>2cac43dfdb66330007bb6a4948961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>itsm_module</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_choice_x_90350_test_track_projects_itsm_module</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-07-15 14:38:36</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

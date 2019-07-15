@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Projects" max_length="40" name="x_90350_test_track_projects" type="collection">
+        <element label="Customer" mandatory="true" max_length="32" name="customer" reference="core_company" type="reference"/>
+        <element choice="1" label="ITSM Module" mandatory="true" max_length="40" name="itsm_module" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Change Management" sequence="100" value="CM"/>
+                <element inactive_on_update="false" label="Change Task" sequence="101" value="CT"/>
+                <element inactive_on_update="false" label="Incident Management" sequence="102" value="IM"/>
+                <element inactive_on_update="false" label="Problem Management" sequence="103" value="PM"/>
+                <element inactive_on_update="false" label="Problem Task" sequence="104" value="PT"/>
+                <element inactive_on_update="false" label="Service Request" sequence="105" value="SR"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Project Id" max_length="40" name="number" type="string"/>
+        <element label="Project Description" max_length="40" name="project_description" type="string"/>
+        <element display="true" label="Project Name" max_length="40" name="project_name" read_only="true" type="string"/>
+        <element choice="1" label="Test Phase" mandatory="true" max_length="40" name="test_phase" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Joint System Integration Testing" sequence="100" value="JSIT"/>
+                <element inactive_on_update="false" label="Unit Testing" sequence="101" value="UT"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>
