@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="integration_type" table="x_90350_test_track_projects" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Custom</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>100</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:38:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c54150ebdb2a330007bb6a494896192c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:39:05</sys_updated_on>
+            <value>custom</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hybrid</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>101</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:38:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>995118ebdb2a330007bb6a494896196f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:39:09</sys_updated_on>
+            <value>hybrid</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standard</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>102</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:38:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c2154ebdb2a330007bb6a494896194e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:39:13</sys_updated_on>
+            <value>standard</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>integration_type</element>
+            <name>x_90350_test_track_projects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:38:25</sys_created_on>
+            <sys_id>a44194ebdb2a330007bb6a494896195a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>integration_type</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_choice_x_90350_test_track_projects_integration_type</sys_update_name>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:38:25</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

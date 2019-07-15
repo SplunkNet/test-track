@@ -38,7 +38,7 @@
         <name>x_90350_test_track_environment_details</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="x_90350_test_track_projects">x_90350_test_track_projects</reference>
         <reference_cascade_rule/>
@@ -54,14 +54,14 @@
         <sys_created_by>arnob.roy</sys_created_by>
         <sys_created_on>2019-07-15 16:39:51</sys_created_on>
         <sys_id>f9486b1fdba6330007bb6a49489619a1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Project</sys_name>
         <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
         <sys_update_name>sys_dictionary_x_90350_test_track_environment_details_project</sys_update_name>
         <sys_updated_by>arnob.roy</sys_updated_by>
-        <sys_updated_on>2019-07-15 19:07:06</sys_updated_on>
+        <sys_updated_on>2019-07-15 19:25:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

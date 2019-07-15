@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="integration_interface" table="x_90350_test_track_projects" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_interface</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ConnectNow</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>100</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:44:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00a2d42fdb2a330007bb6a49489619f0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:46:32</sys_updated_on>
+            <value>cnow</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_interface</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SIF (PDXC)</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>101</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:45:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71e2982fdb2a330007bb6a49489619c0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:46:37</sys_updated_on>
+            <value>sif-pdxc</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integration_interface</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SIF (SRA)</label>
+            <language>en</language>
+            <name>x_90350_test_track_projects</name>
+            <sequence>102</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:45:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8bb2d42fdb2a330007bb6a49489619f2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:46:43</sys_updated_on>
+            <value>sif-sra</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>integration_interface</element>
+            <name>x_90350_test_track_projects</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 19:44:40</sys_created_on>
+            <sys_id>40b2942fdb2a330007bb6a494896195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>integration_interface</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_choice_x_90350_test_track_projects_integration_interface</sys_update_name>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 19:44:40</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -5,7 +5,7 @@
         <basic_apply_to>x_90350_test_track_projects</basic_apply_to>
         <basic_query_from>x_90350_test_track_environment_details</basic_query_from>
         <insert_callback/>
-        <name>Environment Details</name>
+        <name>Environments</name>
         <query_from/>
         <query_with><![CDATA[(function refineQuery(current, parent) {
 
@@ -19,14 +19,14 @@
         <sys_created_by>arnob.roy</sys_created_by>
         <sys_created_on>2019-07-15 17:07:42</sys_created_on>
         <sys_id>198e6357dbe6330007bb6a49489619e5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Environment Details</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Environments</sys_name>
         <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
         <sys_update_name>sys_relationship_198e6357dbe6330007bb6a49489619e5</sys_update_name>
         <sys_updated_by>arnob.roy</sys_updated_by>
-        <sys_updated_on>2019-07-15 17:31:06</sys_updated_on>
+        <sys_updated_on>2019-07-15 20:28:30</sys_updated_on>
     </sys_relationship>
     <sys_translated_text action="delete_multiple" query="documentkey=198e6357dbe6330007bb6a49489619e5"/>
 </record_update>

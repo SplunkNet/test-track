@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="test_co_ordinator_cus" label="Test Co-ordinator (CUS)" language="en" table="x_90350_test_track_engagement_details">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>test_co_ordinator_cus</element>
+            <help/>
+            <hint/>
+            <label>Test Co-ordinator (CUS)</label>
+            <language>en</language>
+            <name>x_90350_test_track_engagement_details</name>
+            <plural>Test Co-ordinator (CUS)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-15 20:50:09</sys_created_on>
+            <sys_id>d7a1a0a7db6a330007bb6a4948961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Test Co-ordinator (CUS)</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_documentation_x_90350_test_track_engagement_details_test_co_ordinator_cus_en</sys_update_name>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-15 20:50:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

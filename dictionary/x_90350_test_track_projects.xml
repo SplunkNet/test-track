@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Projects" max_length="40" name="x_90350_test_track_projects" type="collection">
+        <element choice="1" label="Communication Pattern" max_length="40" name="communication_pattern" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Asynchronous" sequence="100" value="Async"/>
+                <element inactive_on_update="false" label="Synchronous" sequence="101" value="sync"/>
+            </choice>
+        </element>
         <element label="Customer" mandatory="true" max_length="32" name="customer" reference="core_company" type="reference"/>
+        <element choice="1" label="Integration Interface" max_length="40" name="integration_interface" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ConnectNow" sequence="100" value="cnow"/>
+                <element inactive_on_update="false" label="SIF (PDXC)" sequence="101" value="sif-pdxc"/>
+                <element inactive_on_update="false" label="SIF (SRA)" sequence="102" value="sif-sra"/>
+            </choice>
+        </element>
+        <element choice="1" label="Integration Type" max_length="40" name="integration_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Custom" sequence="100" value="custom"/>
+                <element inactive_on_update="false" label="Hybrid" sequence="101" value="hybrid"/>
+                <element inactive_on_update="false" label="Standard" sequence="102" value="standard"/>
+            </choice>
+        </element>
         <element choice="1" label="ITSM Module" mandatory="true" max_length="40" name="itsm_module" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Change Management" sequence="100" value="CM"/>
@@ -11,15 +31,31 @@
                 <element inactive_on_update="false" label="Service Request" sequence="105" value="SR"/>
             </choice>
         </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Project Id" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Messaging Protocol" max_length="40" name="messaging_protocol" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="REST (JSON)" sequence="100" value="rest-json"/>
+                <element inactive_on_update="false" label="REST (XML)" sequence="101" value="rest-xml"/>
+                <element inactive_on_update="false" label="SOAP" sequence="102" value="soap"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Project Id" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Project Description" max_length="40" name="project_description" type="string"/>
         <element display="true" label="Project Name" max_length="40" name="project_name" read_only="true" type="string"/>
+        <element choice="1" label="Project Status" max_length="40" name="project_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="100" value="active"/>
+                <element inactive_on_update="false" label="Closed" sequence="101" value="closed"/>
+                <element inactive_on_update="false" label="On-hold" sequence="103" value="on-hold"/>
+            </choice>
+        </element>
+        <element label="Test End Date" max_length="40" name="test_end_date" type="glide_date"/>
         <element choice="1" label="Test Phase" mandatory="true" max_length="40" name="test_phase" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Joint System Integration Testing" sequence="100" value="JSIT"/>
                 <element inactive_on_update="false" label="Unit Testing" sequence="101" value="UT"/>
             </choice>
         </element>
+        <element label="Test Start Date" max_length="40" name="test_start_date" type="glide_date"/>
         <index name="index">
             <element name="customer"/>
         </index>
