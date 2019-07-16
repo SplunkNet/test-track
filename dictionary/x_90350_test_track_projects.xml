@@ -38,6 +38,7 @@
                 <element inactive_on_update="false" label="SOAP" sequence="102" value="soap"/>
             </choice>
         </element>
+        <element label="Notes" max_length="4000" name="notes" type="journal"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Project Id" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Project Description" max_length="40" name="project_description" type="string"/>
         <element display="true" label="Project Name" max_length="40" name="project_name" read_only="true" type="string"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="x_90350_test_track_m2m_project_-_te_standard_tes" max_length="40" name="x_90350_test_track_m2m_project_te_standard_tes" type="collection">
+        <element label="Project - Test Scenarios" max_length="32" name="project_test_scenarios" reference="x_90350_test_track_project_test_scenarios" type="reference"/>
+        <element label="Standard Test Scenarios" max_length="32" name="standard_test_scenarios" reference="x_90350_test_track_standard_test_scenarios" type="reference"/>
+        <index name="index">
+            <element name="standard_test_scenarios"/>
+        </index>
+        <index name="index2">
+            <element name="project_test_scenarios"/>
+        </index>
+    </element>
+</database>

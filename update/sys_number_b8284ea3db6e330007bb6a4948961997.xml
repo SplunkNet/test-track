@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_90350_test_track_standard_test_cases">x_90350_test_track_standard_test_cases</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>STC</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-16 04:17:48</sys_created_on>
+        <sys_id>b8284ea3db6e330007bb6a4948961997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>STC</sys_name>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>sys_number_b8284ea3db6e330007bb6a4948961997</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-16 04:17:48</sys_updated_on>
+    </sys_number>
+</record_update>

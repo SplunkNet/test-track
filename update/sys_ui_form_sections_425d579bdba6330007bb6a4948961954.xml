@@ -14,6 +14,20 @@
             <sys_updated_by>arnob.roy</sys_updated_by>
             <sys_updated_on>2019-07-15 15:51:36</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-16 06:31:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ca6aa67dbae330007bb6a49489619a1</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_90350_test_track_projects" name="x_90350_test_track_projects" sys_domain="global" view="Default view">425d579bdba6330007bb6a4948961954</sys_ui_form>
+            <sys_ui_section caption="Additional Info" display_value="Additional Info" name="x_90350_test_track_projects" sys_domain="global" view="Default view">88a6aa67dbae330007bb6a4948961918</sys_ui_section>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-16 10:35:12</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_90350_test_track_projects</name>
             <roles/>
