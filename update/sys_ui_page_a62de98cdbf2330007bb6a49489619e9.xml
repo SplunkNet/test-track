@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var form = document.forms['form.' + '${sys_id}'];
+	
+	function closeDialog() {
+		var gdw = window.GlideModal ? GlideModal.get() : GlideDialogWindow.get();
+		var f = gdw.getPreference('closeDlgFunc');
+		if (typeof(f) == 'function') {
+			f.call(gdw);
+		}
+	}
+	
+	function submitTestSet() {
+		
+		var test_set_ref = form['test_set_ref'].value;
+		
+		if(test_set_ref)
+			return true;
+		else
+			showMessage('error', getMessage('Please select a test set'));
+		
+		return false;
+	}
+	
+	function showMessage(type, message) {
+		
+		var span = document.createElement('span');
+		span.setAttribute('data-type', type);
+		span.setAttribute('data-text', message);
+		var notification = {
+			xml: span
+		};
+		GlideUI.get().fire(new GlideUINotification(notification));
+	}
+	
+	function onChangeTestSet() {
+		
+		var test_set_ref = form['test_set_ref'].value;
+		if(test_set_ref) {
+			$j('#required_test_set_id').removeClass('mandatory-field');
+		} else {
+			$j('#required_test_set_id').addClass('mandatory-field');
+		}
+	}
+	
+	function cancel() {
+		closeDialog();
+	}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_90350_test_track_copy_to_project_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:requires name="styles/app.test_management/add-to-test-set.css" />
+	<g2:evaluate var="jvar_test_ids" object="true" jelly="true">
+        jelly.sysparm_test_ids
+    </g2:evaluate>
+	<g:ui_form>
+		<div class="test_step_container">
+		<div class="step_set_ref">
+			<input type="hidden" name="test_ids" id="test_ids" value="$[jvar_test_ids]"/>
+			<div type="hidden"></div>
+            <div class="form-group" id="ref_group_field">
+                <label class="control-label" for="sys_display.group_ref"  style="margin-top: 6px; padding-right: 0;">
+					<span class="icon-required mandatory-field" id="required_test_set_id"></span>
+					<span>${gs.getMessage('Test set')}</span>
+                </label>
+                <span class="ref_box">
+                    <g:ui_reference onchange="onChangeTestSet()" name="test_set_ref" id="test_set_ref" table="sn_test_management_test_set" completer="AJAXTableCompleter"/>
+                </span>
+            </div>
+        </div>
+		<div id="dialog_buttons" class="step_dialog_buttons">
+			<g:dialog_buttons_ok_cancel ok="return submitTestSet()" ok_id="ok_button" cancel_type="button" ok_text="${gs.getMessage('Add')}" cancel="return cancel()"/>
+		</div>
+		</div>
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>copy_to_project_dialog</name>
+        <processing_script><![CDATA[function getM2mRecordMap(testIds, testSetId) {
+	var gr = new GlideRecord("sn_test_management_m2m_test_set_test");
+	gr.addQuery('test','IN' , testIds);
+	gr.addQuery('test_set', testSetId);
+	gr.query();
+	var map = {};
+	while(gr.next()){
+		map[gr.getValue('test')] = gr.getValue('sys_id');
+	}
+	return map;
+}
+
+function addTestToTestSet(test_ids, testSetId) {
+	
+	var map = getM2mRecordMap(test_ids, testSetId);
+	var testIdArr = test_ids.split(",");
+	var count = 0;
+	for(var i = 0; i < testIdArr.length; i++) {
+		if(map[testIdArr[i]])
+			continue;
+		var m2mGr = new GlideRecord("sn_test_management_m2m_test_set_test");
+		m2mGr.setValue('test', testIdArr[i]);
+		m2mGr.setValue('test_set', testSetId);
+		m2mGr.insert();
+		count++;
+	}
+	return count;
+}
+
+if(test_set_ref == "") {
+	gs.addInfoMessage(gs.getMessage('Please select a test set'));
+} else {
+	var count = addTestToTestSet(test_ids, test_set_ref);
+	var testSetGr = new GlideRecord('sn_test_management_test_set');
+	testSetGr.get(test_set_ref);
+	var testSetLink = "<a href='/x_90350_test_track_copy_to_project_dialog.do?sys_id=" + testSetGr.getValue('sys_id') + "'>" + testSetGr.getValue('name') + "</a>";
+	if (count == 1)
+		gs.addInfoMessage(gs.getMessage("1 test has been added to the test set {0}",[testSetLink]));
+	else
+		gs.addInfoMessage(gs.getMessage("{0} tests have been added to the test set {1}",[count + "", testSetLink]));
+}
+	
+var session = gs.getSession();
+var urlOnStack = session.getUrlOnStack();
+response.sendRedirect(urlOnStack);]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-17 15:38:47</sys_created_on>
+        <sys_id>a62de98cdbf2330007bb6a49489619e9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>copy_to_project_dialog</sys_name>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>sys_ui_page_a62de98cdbf2330007bb6a49489619e9</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-17 16:27:33</sys_updated_on>
+    </sys_ui_page>
+</record_update>
