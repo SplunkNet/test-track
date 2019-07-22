@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_90350_test_track_standard_test_scenarios" label="Project Test Scenarios" max_length="40" name="x_90350_test_track_project_test_scenarios" type="collection"/>
+    <element label="Test Scenarios" max_length="40" name="x_90350_test_track_project_test_scenarios" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Scenario No" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" choice_field="priority" choice_table="x_90350_test_track_standard_test_scenarios" label="Priority" max_length="40" name="priority" type="choice">
+            <choice/>
+        </element>
+        <element label="Project" max_length="32" name="project" read_only="true" reference="x_90350_test_track_projects" type="reference"/>
+        <element label="Scenario Description" max_length="6500" name="scenario_description" type="string"/>
+        <element label="Scenario Name" max_length="40" name="scenario_name" type="string"/>
+        <element choice="3" default="custom" label="Scenario Type" max_length="40" name="scenario_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Custom" sequence="100" value="custom"/>
+                <element inactive_on_update="false" label="Standard" sequence="101" value="standard"/>
+            </choice>
+        </element>
+        <element choice="3" default="in-scope" label="Scope" max_length="40" name="scope" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Scope" sequence="100" value="in-scope"/>
+                <element inactive_on_update="false" label="Out of Scope" sequence="101" value="out-of-scope"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="test_phase" choice_table="x_90350_test_track_projects" label="Test Phase Category" max_length="40" name="test_phase_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Joint System Integration Testing" sequence="0" value="JSIT"/>
+                <element inactive_on_update="false" label="Unit Testing" sequence="1" value="UT"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="project"/>
+        </index>
+    </element>
 </database>

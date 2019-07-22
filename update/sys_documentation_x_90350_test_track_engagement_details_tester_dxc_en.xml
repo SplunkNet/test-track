@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="tester_dxc" label="Tester (DXC)" language="en" table="x_90350_test_track_engagement_details">
+    <sys_documentation element="tester_dxc" label="Tester" language="en" table="x_90350_test_track_engagement_details">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>tester_dxc</element>
             <help/>
             <hint/>
-            <label>Tester (DXC)</label>
+            <label>Tester</label>
             <language>en</language>
             <name>x_90350_test_track_engagement_details</name>
-            <plural>Tester (DXC)</plural>
+            <plural>Testers</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>arnob.roy</sys_created_by>
             <sys_created_on>2019-07-15 20:50:09</sys_created_on>
             <sys_id>4230a1f7db66730007bb6a4948961971</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Tester (DXC)</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Tester</sys_name>
             <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
             <sys_policy/>
             <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
             <sys_update_name>sys_documentation_x_90350_test_track_engagement_details_tester_dxc_en</sys_update_name>
             <sys_updated_by>arnob.roy</sys_updated_by>
-            <sys_updated_on>2019-07-15 20:50:09</sys_updated_on>
+            <sys_updated_on>2019-07-19 15:34:19</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

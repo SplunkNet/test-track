@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Environment Details" max_length="40" name="x_90350_test_track_environment_details" type="collection">
+    <element label="Test Environment" max_length="40" name="x_90350_test_track_environment_details" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Attachment Endpoint (CUS)" max_length="1024" name="attachment_endpoint_cus" type="url"/>
         <element label="Attachment Endpoint (DXC)" max_length="1024" name="attachment_endpoint_dxc" type="url"/>

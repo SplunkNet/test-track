@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="test_step_result" table="x_90350_test_track_standard_test_steps" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_step_result</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No Run</label>
+            <language>en</language>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sequence>100</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:40:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>57635df4db32b30007bb6a4948961928</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:42:33</sys_updated_on>
+            <value>no-run</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_step_result</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pass</label>
+            <language>en</language>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sequence>101</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:41:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8eb3d1f4db32b30007bb6a49489619ee</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:42:59</sys_updated_on>
+            <value>pass</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_step_result</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fail</label>
+            <language>en</language>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sequence>102</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:41:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56c395f4db32b30007bb6a494896191e</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:43:04</sys_updated_on>
+            <value>fail</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_step_result</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Blocked</label>
+            <language>en</language>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sequence>103</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:41:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83d319f4db32b30007bb6a4948961914</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:43:11</sys_updated_on>
+            <value>blocked</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>test_step_result</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NA</label>
+            <language>en</language>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sequence>104</sequence>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:43:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b445538db32b30007bb6a4948961910</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:44:00</sys_updated_on>
+            <value>na</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>test_step_result</element>
+            <name>x_90350_test_track_standard_test_steps</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 21:40:46</sys_created_on>
+            <sys_id>33931df4db32b30007bb6a4948961933</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>test_step_result</sys_name>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_choice_x_90350_test_track_standard_test_steps_test_step_result</sys_update_name>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 21:40:46</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Engagement Details" max_length="40" name="x_90350_test_track_engagement_details" type="collection">
+    <element label="Test Resources" max_length="40" name="x_90350_test_track_engagement_details" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Developer" max_length="40" name="developer_cus" type="string"/>
         <element label="Developer" max_length="32" name="developer_dxc" reference="sys_user" type="reference"/>
@@ -17,12 +17,12 @@
         <element label="Project Manager" max_length="32" name="project_manager_dxc" reference="sys_user" type="reference"/>
         <element label="Solution Architect" max_length="40" name="solution_architect_cus" type="string"/>
         <element label="Solution Architect" max_length="32" name="solution_architect_dxc" reference="sys_user" type="reference"/>
-        <element label="Tester (CUS)" max_length="40" name="tester_cus" type="string"/>
-        <element label="Tester (DXC)" max_length="32" name="tester_dxc" reference="sys_user" type="reference"/>
-        <element label="Test Co-ordinator (CUS)" max_length="40" name="test_co_ordinator_cus" type="string"/>
-        <element label="Test Co-ordinator (DXC)" max_length="32" name="test_co_ordinator_dxc" reference="sys_user" type="reference"/>
-        <element label="UAT Co-ordinator (CUS)" max_length="40" name="uat_co_ordinator_cus" type="string"/>
-        <element label="UAT Co-ordinator (DXC)" max_length="32" name="uat_co_ordinator_dxc" reference="sys_user" type="reference"/>
+        <element label="Tester" max_length="40" name="tester_cus" type="string"/>
+        <element label="Tester" max_length="32" name="tester_dxc" reference="sys_user" type="reference"/>
+        <element label="Test Co-ordinator" max_length="40" name="test_co_ordinator_cus" type="string"/>
+        <element label="Test Co-ordinator" max_length="32" name="test_co_ordinator_dxc" reference="sys_user" type="reference"/>
+        <element label="UAT Co-ordinator" max_length="40" name="uat_co_ordinator_cus" type="string"/>
+        <element label="UAT Co-ordinator" max_length="32" name="uat_co_ordinator_dxc" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="tester_dxc"/>
         </index>

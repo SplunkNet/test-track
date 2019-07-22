@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="" label="Project Test Scenarios" language="en" table="x_90350_test_track_project_test_scenarios">
+    <sys_documentation element="" label="Test Scenarios" language="en" table="x_90350_test_track_project_test_scenarios">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element/>
             <help/>
             <hint/>
-            <label>Project Test Scenarios</label>
+            <label>Test Scenarios</label>
             <language>en</language>
             <name>x_90350_test_track_project_test_scenarios</name>
-            <plural>Project Test Scenarios</plural>
+            <plural>Test Scenarios</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>arnob.roy</sys_created_by>
-            <sys_created_on>2019-07-17 09:05:17</sys_created_on>
-            <sys_id>a1839848db32330007bb6a4948961916</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Project Test Scenarios</sys_name>
+            <sys_created_on>2019-07-17 18:49:47</sys_created_on>
+            <sys_id>ab49de88db76330007bb6a4948961989</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Test Scenarios</sys_name>
             <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
             <sys_policy/>
             <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
             <sys_update_name>sys_documentation_x_90350_test_track_project_test_scenarios__en</sys_update_name>
             <sys_updated_by>arnob.roy</sys_updated_by>
-            <sys_updated_on>2019-07-17 09:05:17</sys_updated_on>
+            <sys_updated_on>2019-07-19 15:46:21</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

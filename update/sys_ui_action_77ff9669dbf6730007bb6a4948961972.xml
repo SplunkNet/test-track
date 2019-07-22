@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2/>
+        <comments>Display dialog window to select project for multiple tests</comments>
+        <condition/>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint>Add test cases to project</hint>
+        <isolate_script>true</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Copy to Projects</name>
+        <onclick>copyToProject()</onclick>
+        <order>100</order>
+        <script><![CDATA[function copyToProject() {
+	var scenarios = g_list.getChecked();
+	if(scenarios == "") {
+		alert('Please select test case(s)');
+	}
+	else {
+		var dialogClass = GlideModal ? GlideModal : GlideDialogWindow;
+		var dlg = new dialogClass("x_90350_test_track_tc_copy_to_project_dialog");
+		var titleMsg = getMessage("Select Project");
+		dlg.setTitle(titleMsg);
+		dlg.setPreference('closeDlgFunc', function() {dlg.destroy();});
+		dlg.setPreference('sysparm_scenario_ids', scenarios);
+		dlg.setSize(400,300);
+		dlg.render();
+	}
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-22 11:14:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77ff9669dbf6730007bb6a4948961972</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy to Projects</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>sys_ui_action_77ff9669dbf6730007bb6a4948961972</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-22 11:29:53</sys_updated_on>
+        <table>x_90350_test_track_standard_test_cases</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

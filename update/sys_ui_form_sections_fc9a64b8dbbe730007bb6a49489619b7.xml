@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="fc9a64b8dbbe730007bb6a49489619b7" sys_domain="global" table="x_90350_test_track_project_test_scenarios" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 18:41:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b09a64b8dbbe730007bb6a49489619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_90350_test_track_project_test_scenarios" name="x_90350_test_track_project_test_scenarios" sys_domain="global" view="Default view">fc9a64b8dbbe730007bb6a49489619b7</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_90350_test_track_project_test_scenarios" sys_domain="global" view="Default view">cb53ea4cdb76330007bb6a494896194b</sys_ui_section>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 18:41:26</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_90350_test_track_project_test_scenarios</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>arnob.roy</sys_created_by>
+            <sys_created_on>2019-07-19 18:41:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc9a64b8dbbe730007bb6a49489619b7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_90350_test_track_project_test_scenarios</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+            <sys_update_name>sys_ui_form_sections_fc9a64b8dbbe730007bb6a49489619b7</sys_update_name>
+            <sys_updated_by>arnob.roy</sys_updated_by>
+            <sys_updated_on>2019-07-19 18:41:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

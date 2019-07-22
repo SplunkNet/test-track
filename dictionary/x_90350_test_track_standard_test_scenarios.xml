@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Standard Test Scenarios" max_length="40" name="x_90350_test_track_standard_test_scenarios" type="collection">
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Standard Scenario No" max_length="40" name="number" type="string"/>
-        <element label="Scenario Description" max_length="40" name="scenario_description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Scenario No" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Medium" sequence="101" value="2"/>
+                <element inactive_on_update="false" label="Low" sequence="102" value="3"/>
+            </choice>
+        </element>
+        <element label="Scenario Description" max_length="6500" name="scenario_description" type="string"/>
         <element label="Scenario Name" max_length="40" name="scenario_name" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element choice="1" choice_field="test_phase" choice_table="x_90350_test_track_projects" label="Test Phase Category" max_length="40" name="test_phase_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Joint System Integration Testing" sequence="0" value="JSIT"/>
+                <element inactive_on_update="false" label="Unit Testing" sequence="1" value="UT"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="sys_class_name"/>
         </index>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Test Track">bbfbb69bdb26330007bb6a49489619de</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Project Test Scenarios</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_90350_test_track_project_test_scenarios</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_90350_test_track.user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-17 18:49:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f491e88db76330007bb6a49489619f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Test Scenarios</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>sys_app_module_2f491e88db76330007bb6a49489619f9</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-19 15:42:59</sys_updated_on>
+        <timeline_page/>
+        <title>Test Scenarios</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

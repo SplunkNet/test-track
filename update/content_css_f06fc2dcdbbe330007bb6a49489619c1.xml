@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_css">
+    <content_css action="INSERT_OR_UPDATE">
+        <name>addToProjectDialog.css</name>
+        <style>/* line 75, sass/_common.scss */&#13;
+.flex {&#13;
+display: flex;&#13;
+display: -webkit-flex;&#13;
+display: -ms-flexbox;&#13;
+}&#13;
+&#13;
+/* line 79, sass/_common.scss */&#13;
+.flex-h-center {&#13;
+justify-content: center;&#13;
+-webkit-justify-content: center;&#13;
+-ms-justify-content: center;&#13;
+}&#13;
+&#13;
+/* line 83, sass/_common.scss */&#13;
+.flex-v-center {&#13;
+-webkit-align-items: center;&#13;
+-ms-align-items: center;&#13;
+align-items: center;&#13;
+}&#13;
+&#13;
+/* line 87, sass/_common.scss */&#13;
+.flex-1 {&#13;
+flex: 1;&#13;
+-webkit-flex: 1;&#13;
+-moz-flex: 1;&#13;
+-ms-flex: 1;&#13;
+}&#13;
+&#13;
+/* line 91, sass/_common.scss */&#13;
+.text-green {&#13;
+color: #48c891 !important;&#13;
+}&#13;
+&#13;
+/* line 95, sass/_common.scss */&#13;
+.text-red {&#13;
+color: #c83c36 !important;&#13;
+}&#13;
+&#13;
+/* line 99, sass/_common.scss */&#13;
+.text-orange {&#13;
+color: #ff8c3e !important;&#13;
+}&#13;
+&#13;
+/* line 103, sass/_common.scss */&#13;
+.text-dark {&#13;
+color: #666666 !important;&#13;
+}&#13;
+&#13;
+/* line 107, sass/_common.scss */&#13;
+.test-passed {&#13;
+color: #48c891;&#13;
+}&#13;
+&#13;
+/* line 111, sass/_common.scss */&#13;
+.test-failed {&#13;
+color: #c83c36;&#13;
+}&#13;
+&#13;
+/* line 115, sass/_common.scss */&#13;
+.test-blocked {&#13;
+color: #dfd139;&#13;
+}&#13;
+&#13;
+/* line 119, sass/_common.scss */&#13;
+.step-failed {&#13;
+background-color: #c83c36;&#13;
+}&#13;
+&#13;
+/* line 123, sass/_common.scss */&#13;
+.step-blocked {&#13;
+background-color: #dfd139;&#13;
+}&#13;
+&#13;
+/* line 127, sass/_common.scss */&#13;
+.bg-red {&#13;
+background-color: #c83c36 !important;&#13;
+}&#13;
+&#13;
+/* line 131, sass/_common.scss */&#13;
+.bg-orange {&#13;
+background-color: #ff8c3e !important;&#13;
+}&#13;
+&#13;
+/* line 135, sass/_common.scss */&#13;
+.flex-column {&#13;
+-webkit-flex-direction: column;&#13;
+flex-direction: column;&#13;
+}&#13;
+&#13;
+/* line 139, sass/_common.scss */&#13;
+.flex-ellipsis {&#13;
+white-space: nowrap;&#13;
+text-overflow: ellipsis;&#13;
+overflow: hidden;&#13;
+}&#13;
+&#13;
+/* line 145, sass/_common.scss */&#13;
+.word-break {&#13;
+word-break: break-all;&#13;
+word-break: break-word;&#13;
+}&#13;
+&#13;
+/* line 150, sass/_common.scss */&#13;
+*[tabindex] {&#13;
+outline-color: #1f8476;&#13;
+}&#13;
+&#13;
+/* line 8, sass/add-to-test-set.scss */&#13;
+.modal-sm .modal-body {&#13;
+padding: 25px !important;&#13;
+}&#13;
+&#13;
+/* line 14, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref {&#13;
+padding: 0 35px;&#13;
+}&#13;
+/* line 16, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref .form-group {&#13;
+display: flex;&#13;
+display: -webkit-flex;&#13;
+display: -ms-flexbox;&#13;
+-webkit-align-items: center;&#13;
+-ms-align-items: center;&#13;
+align-items: center;&#13;
+margin-bottom: 40px;&#13;
+}&#13;
+/* line 20, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref .form-group .control-label {&#13;
+max-width: 60px;&#13;
+margin-right: 8px;&#13;
+}&#13;
+/* line 23, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref .form-group .control-label .icon-required {&#13;
+color: #666666;&#13;
+margin-right: 3px;&#13;
+}&#13;
+/* line 26, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref .form-group .control-label .icon-required.mandatory-field {&#13;
+color: #c83c36;&#13;
+}&#13;
+/* line 31, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref .form-group .ref_box {&#13;
+flex: 1;&#13;
+-webkit-flex: 1;&#13;
+-moz-flex: 1;&#13;
+-ms-flex: 1;&#13;
+}&#13;
+/* line 35, sass/add-to-test-set.scss */&#13;
+.project_container .project_ref #test_set_refLINK {&#13;
+display: none;&#13;
+}&#13;
+/* line 39, sass/add-to-test-set.scss */&#13;
+.project_container .project_dialog_buttons {&#13;
+text-align: right;&#13;
+}</style>
+        <sys_class_name>content_css</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-18 12:46:04</sys_created_on>
+        <sys_id>f06fc2dcdbbe330007bb6a49489619c1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>addToProjectDialog.css</sys_name>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>content_css_f06fc2dcdbbe330007bb6a49489619c1</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-18 13:28:05</sys_updated_on>
+        <type>local</type>
+        <url/>
+    </content_css>
+</record_update>
