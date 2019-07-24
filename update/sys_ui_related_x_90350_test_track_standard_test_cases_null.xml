@@ -2,17 +2,17 @@
     <sys_ui_related sys_domain="global" table="x_90350_test_track_standard_test_cases" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Standard Test Cases - Default view" name="x_90350_test_track_standard_test_cases" related_list="NULL" sys_domain="global" view="Default view">6a3151b4db32b30007bb6a4948961972</list_id>
+            <list_id display_value="Standard Test Cases - Default view" name="x_90350_test_track_standard_test_cases" related_list="NULL" sys_domain="global" view="Default view">4374df61dbba730007bb6a49489619d9</list_id>
             <order_by/>
             <position>0</position>
-            <related_list>x_90350_test_track_standard_test_steps.test_case_no</related_list>
+            <related_list>x_90350_test_track_standard_test_steps.standard_test_case_no</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>arnob.roy</sys_created_by>
-            <sys_created_on>2019-07-19 21:30:19</sys_created_on>
-            <sys_id>6a3191b4db32b30007bb6a4948961908</sys_id>
+            <sys_created_on>2019-07-22 14:59:13</sys_created_on>
+            <sys_id>c774df61dbba730007bb6a49489619d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>arnob.roy</sys_updated_by>
-            <sys_updated_on>2019-07-19 21:30:19</sys_updated_on>
+            <sys_updated_on>2019-07-22 14:59:13</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Standard Test Cases - Default view</calculated_name>
@@ -23,10 +23,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>arnob.roy</sys_created_by>
-            <sys_created_on>2019-07-19 21:30:19</sys_created_on>
+            <sys_created_on>2019-07-22 14:59:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6a3151b4db32b30007bb6a4948961972</sys_id>
+            <sys_id>4374df61dbba730007bb6a49489619d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Standard Test Cases - Default view</sys_name>
             <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
@@ -34,7 +34,7 @@
             <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
             <sys_update_name>sys_ui_related_x_90350_test_track_standard_test_cases_null</sys_update_name>
             <sys_updated_by>arnob.roy</sys_updated_by>
-            <sys_updated_on>2019-07-19 21:30:19</sys_updated_on>
+            <sys_updated_on>2019-07-22 14:59:13</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

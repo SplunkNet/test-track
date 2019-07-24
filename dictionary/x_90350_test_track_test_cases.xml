@@ -14,7 +14,7 @@
         <element choice="1" choice_field="test_phase" choice_table="x_90350_test_track_projects" label="Test Phase Category" max_length="40" name="test_phase_category" type="choice">
             <choice/>
         </element>
-        <element choice="1" default="Custom" label="Test Type" max_length="40" name="test_type" type="string">
+        <element choice="1" choice_field="scenario_type" choice_table="x_90350_test_track_project_test_scenarios" default="custom" label="Test Type" max_length="40" name="test_type" type="string">
             <choice/>
         </element>
         <index name="index">

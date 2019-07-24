@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Test Steps" max_length="40" name="x_90350_test_track_test_steps" type="collection">
+        <element label="Expected Result" max_length="40" name="expected_result" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Test Step No" max_length="40" name="number" type="string"/>
+        <element choice="1" choice_field="owner" choice_table="x_90350_test_track_standard_test_steps" label="Owner" max_length="40" name="owner" type="choice">
+            <choice/>
+        </element>
+        <element label="Step Description" max_length="6500" name="step_description" type="string"/>
+        <element label="Step Name" max_length="40" name="step_name" type="string"/>
+        <element label="Test Case No" max_length="32" name="test_case_no" reference="x_90350_test_track_test_cases" type="reference"/>
+        <element choice="1" choice_field="transaction_type" choice_table="x_90350_test_track_standard_test_steps" label="Transaction Type" max_length="40" name="transaction_type" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="test_case_no"/>
+        </index>
+    </element>
+</database>

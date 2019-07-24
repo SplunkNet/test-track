@@ -2,63 +2,63 @@
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
         <client_script><![CDATA[var form = document.forms['form.' + '${sys_id}'];
-	
-	function closeDialog() {
-		var gdw = window.GlideModal ? GlideModal.get() : GlideDialogWindow.get();
-		var f = gdw.getPreference('closeDlgFunc');
-		if (typeof(f) == 'function') {
-			f.call(gdw);
-		}
+
+function closeDialog() {
+	var gdw = window.GlideModal ? GlideModal.get() : GlideDialogWindow.get();
+	var f = gdw.getPreference('closeDlgFunc');
+	if (typeof(f) == 'function') {
+		f.call(gdw);
 	}
+}
+
+function submitProject() {
+	var project_ref = form['project_ref'].value;
 	
-	function submitProject() {
-		var project_ref = form['project_ref'].value;
-		
-		if(project_ref) {
-			return true;
-		}
-		else {
-			showMessage('error', getMessage('Please select a project'));
-		}
-		return false;
+	if(project_ref) {
+		return true;
 	}
-	
-	function showMessage(type, message) {		
-		var span = document.createElement('span');
-		span.setAttribute('data-type', type);
-		span.setAttribute('data-text', message);
-		var notification = {
-			xml: span
-		};
-		GlideUI.get().fire(new GlideUINotification(notification));
+	else {
+		showMessage('error', getMessage('Please select a project'));
 	}
-	
-	function onChangeProject() {		
-		var project_ref = form['project_ref'].value;
-		if(project_ref) {
-			$j('#required_project_id').removeClass('mandatory-field');
-		}
-		else {
-			$j('#required_project_id').addClass('mandatory-field');
-		}
+	return false;
+}
+
+function showMessage(type, message) {		
+	var span = document.createElement('span');
+	span.setAttribute('data-type', type);
+	span.setAttribute('data-text', message);
+	var notification = {
+		xml: span
+	};
+	GlideUI.get().fire(new GlideUINotification(notification));
+}
+
+function onChangeProject() {		
+	var project_ref = form['project_ref'].value;
+	if(project_ref) {
+		$j('#required_project_id').removeClass('mandatory-field');
 	}
-	
-	function cancel() {
-		closeDialog();
-	}]]></client_script>
+	else {
+		$j('#required_project_id').addClass('mandatory-field');
+	}
+}
+
+function cancel() {
+	closeDialog();
+}]]></client_script>
         <description/>
         <direct>false</direct>
         <endpoint>x_90350_test_track_tc_copy_to_project_dialog.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	<link href="f06fc2dcdbbe330007bb6a49489619c1.cssdbx" rel="stylesheet" type="text/css"></link>
-	<g2:evaluate var="jvar_scenario_ids" object="true" jelly="true">
-        jelly.sysparm_scenario_ids
+	<g2:evaluate var="jvar_testcase_ids" object="true" jelly="true">
+        jelly.sysparm_testcase_ids
     </g2:evaluate>
 	<g:ui_form>
 		<div class="test_step_container ">
 		<div class="step_set_ref">
-			<input type="hidden" name="scenario_ids" id="scenario_ids" value="$[jvar_scenario_ids]"/>
+			<input type="hidden" name="testcase_ids" id="testcase_ids" value="$[jvar_testcase_ids]"/>
 			<div type="hidden"></div>
             <div class="form-group" id="ref_group_field">
                 <label class="control-label" for="sys_display.group_ref"  style="margin-top: 6px; padding-right: 0;">
@@ -77,15 +77,15 @@
 	</g:ui_form>
 </j:jelly>]]></html>
         <name>tc_copy_to_project_dialog</name>
-        <processing_script><![CDATA[function addScenarioToProject(scenario_ids, projectId) {
-	var scenarioIdArray = scenario_ids.split(",");
+        <processing_script><![CDATA[function addTestCaseToProject(testcase_ids, projectId) {
+	var testCaseIdArray = testcase_ids.split(",");
 	var count = 0;
-	for(var i = 0; i < scenarioIdArray.length; i++) {
-		var stsGr = new GlideRecord('x_90350_test_track_standard_test_scenarios');
-		stsGr.addQuery('sys_id', scenarioIdArray[i].toString());
+	for(var i = 0; i < testCaseIdArray.length; i++) {
+		var stsGr = new GlideRecord('x_90350_test_track_standard_test_cases');
+		stsGr.addQuery('sys_id', testCaseIdArray[i].toString());
 		stsGr.query();
 		while(stsGr.next()) {
-			var ptsGr = new GlideRecord('x_90350_test_track_project_test_scenarios');
+			var ptsGr = new GlideRecord('x_90350_test_track_test_cases');
 			ptsGr.initialize();
 			ptsGr.project = projectId;
 			ptsGr.scenario_description= stsGr.scenario_description;
@@ -104,15 +104,15 @@ if(project_ref == "") {
 	gs.addInfoMessage(gs.getMessage('Please select a project'));
 }
 else {
-	var count = addScenarioToProject(scenario_ids, project_ref);
+	var count = addTestCaseToProject(testcase_ids, project_ref);
 	var projectGr = new GlideRecord('x_90350_test_track_projects');
 	projectGr.get(project_ref);
 	var projectLink = "<a href='/x_90350_test_track_projects.do?sys_id=" + projectGr.getValue('sys_id') + "'>" + projectGr.getValue('project_name') + "</a>";
 	if (count == 1)	{
-		gs.addInfoMessage(gs.getMessage("1 scenario has been added to project {0}", [projectLink]));
+		gs.addInfoMessage(gs.getMessage("1 test case has been added to project {0}", [projectLink]));
 	}
 	else {
-		gs.addInfoMessage(gs.getMessage("{0} scenarios have been added to project {1}",[count + "", projectLink]));
+		gs.addInfoMessage(gs.getMessage("{0} test cases have been added to project {1}",[count + "", projectLink]));
 	}
 }
 var session = gs.getSession();
@@ -122,13 +122,13 @@ response.sendRedirect(urlOnStack);]]></processing_script>
         <sys_created_by>arnob.roy</sys_created_by>
         <sys_created_on>2019-07-22 11:29:07</sys_created_on>
         <sys_id>e914222ddbf6730007bb6a494896193f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>tc_copy_to_project_dialog</sys_name>
         <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
         <sys_update_name>sys_ui_page_e914222ddbf6730007bb6a494896193f</sys_update_name>
         <sys_updated_by>arnob.roy</sys_updated_by>
-        <sys_updated_on>2019-07-22 11:29:07</sys_updated_on>
+        <sys_updated_on>2019-07-22 16:06:26</sys_updated_on>
     </sys_ui_page>
 </record_update>

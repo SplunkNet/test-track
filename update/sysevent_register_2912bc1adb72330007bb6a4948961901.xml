@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>x_90350_test_track.email_test_report</event_name>
+        <fired_by/>
+        <queue/>
+        <suffix>email_test_report</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>arnob.roy</sys_created_by>
+        <sys_created_on>2019-07-24 11:06:21</sys_created_on>
+        <sys_id>2912bc1adb72330007bb6a4948961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_90350_test_track.email_test_report</sys_name>
+        <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
+        <sys_update_name>sysevent_register_2912bc1adb72330007bb6a4948961901</sys_update_name>
+        <sys_updated_by>arnob.roy</sys_updated_by>
+        <sys_updated_on>2019-07-24 11:06:21</sys_updated_on>
+        <table/>
+    </sysevent_register>
+</record_update>

@@ -12,12 +12,12 @@
 
 })(current);]]></calculation>
         <choice>1</choice>
-        <choice_field/>
-        <choice_table/>
+        <choice_field>scenario_type</choice_field>
+        <choice_table>x_90350_test_track_project_test_scenarios</choice_table>
         <column_label>Test Type</column_label>
         <comments/>
         <create_roles/>
-        <default_value>Custom</default_value>
+        <default_value>custom</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -53,7 +53,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>arnob.roy</sys_created_by>
         <sys_created_on>2019-07-19 16:04:55</sys_created_on>
-        <sys_id>01f34070db7e730007bb6a494896194a</sys_id>
+        <sys_id>f3704721db7a730007bb6a494896199e</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Test Type</sys_name>
         <sys_package display_value="Test Track" source="x_90350_test_track">23fb7e1fdba2330007bb6a49489619b6</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Test Track">23fb7e1fdba2330007bb6a49489619b6</sys_scope>
         <sys_update_name>sys_dictionary_x_90350_test_track_test_cases_test_type</sys_update_name>
         <sys_updated_by>arnob.roy</sys_updated_by>
-        <sys_updated_on>2019-07-19 19:52:11</sys_updated_on>
+        <sys_updated_on>2019-07-22 13:41:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
